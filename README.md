@@ -31,8 +31,8 @@ We have only 16.07% of customers who have churned. Thus, it's a bit difficult to
     - Months_Inactive_12_mon - No. of months inactive in the last 12 months
     - Contacts_Count_12_mon - No. of Contacts in the last 12 months
     - Credit_Limit - Credit Limit on the Credit Card
-    - Total_Revolving_Bal - Total Revolving Balance on the Credit Card
-    - Avg_Open_To_Buy - Open to Buy Credit Line (Average of last 12 months)
+    - Total_Revolving_Bal - Total Revolving Balance on the Credit Card - total amount paid out and in.
+    - Avg_Open_To_Buy - Open to Buy Credit Line (Average of last 12 months) - Average available till limit hit.
     - Total_Amt_Chng_Q4_Q1 - Change in Transaction Amount (Q4 over Q1)
     - Total_Trans_Amt - Total Transaction Amount (Last 12 months)
     - Total_Trans_Ct - Total Transaction Count (Last 12 months)
@@ -50,12 +50,15 @@ We have only 16.07% of customers who have churned. Thus, it's a bit difficult to
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* Women have a higher chance of leaving
+* There are specific ages group more likely to leave
+* We can forcast chance of leaving based on number of transactions
+* Customers with unknown income are more likely to leave.
 
 ## Project Plan
 * Ensure all team members are correctly set up to participate in the Project
-* Agree Hypothesis to test
-* 
+* Undertake initial analysis to look at potential hypothesis to test.
+* Agree Hypothesis to test and first steps.
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations

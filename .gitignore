@@ -9,4 +9,4 @@ node_modules/
 cloudinary_python.txt
 kaggle.json
 .venv/
-jupyter_notebooks\Notebook_Template_PG_Scratchpad.ipynb
+jupyter_notebooks/Notebook_Template_PG_Scratchpad.ipynb
