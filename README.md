@@ -62,6 +62,13 @@ We have only 16.07% of customers who have churned. Thus, it's a bit difficult to
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
+* Women have a higher chance of leaving
+    * Population split M/F attrited/Current showing comparative Percentages.
+    * Analysis of other factors for the attrited women vs non attrited women/men so identify contributing elements.
+* There are specific ages group more likely to leave
+    *
+* We can forcast chance of leaving based on number of transactions
+* Customers with unknown income are more likely to leave.
 
 ## Analysis techniques used
 * List the data analysis methods used and explain limitations or alternative approaches.
@@ -104,3 +111,4 @@ We have only 16.07% of customers who have churned. Thus, it's a bit difficult to
 
 ## Acknowledgements (optional)
 * Thank the people who provided support through this project.
+
