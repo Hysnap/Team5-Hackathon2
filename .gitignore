@@ -8,4 +8,5 @@ node_modules/
 .github/
 cloudinary_python.txt
 kaggle.json
-.ven/
+.venv/
+.gitignore
