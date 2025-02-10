@@ -1,0 +1,5 @@
+Hypothesis,t-statistic,p-value,Result
+Women have a higher chance of leaving,3.777,0.00016,Significant difference (supports hypothesis)
+There are specific age groups more likely to leave,1.899,0.058,No strong evidence
+We can forecast chance of leaving based on transactions,-54.142,0,Significant difference (supports hypothesis)
+Customers with unknown income are more likely to leave,NaN,NaN,No strong evidence
