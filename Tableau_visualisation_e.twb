@@ -1,0 +1,2762 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <CollapsiblePane />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <NavigationAction />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250?rev=1.0' id='Tableau_visualisation_e_17391748116250' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='BankChurners_Cleaned_Encoded' inline='true' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BankChurners_Cleaned_Encoded' name='textscan.1hx2gc40e7mdqs18vrkug0cqiyd9'>
+            <connection class='textscan' directory='C:/Users/Ewa/Heckaton2/Team5-Hackathon2' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1hx2gc40e7mdqs18vrkug0cqiyd9' name='BankChurners_Cleaned_Encoded.csv' table='[BankChurners_Cleaned_Encoded#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='CLIENTNUM' ordinal='0' />
+            <column datatype='string' name='Attrition_Flag' ordinal='1' />
+            <column datatype='integer' name='Customer_Age' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='integer' name='Dependent_count' ordinal='4' />
+            <column datatype='string' name='Education_Level' ordinal='5' />
+            <column datatype='string' name='Marital_Status' ordinal='6' />
+            <column datatype='string' name='Income_Category' ordinal='7' />
+            <column datatype='string' name='Card_Category' ordinal='8' />
+            <column datatype='integer' name='Months_on_book' ordinal='9' />
+            <column datatype='integer' name='Total_Relationship_Count' ordinal='10' />
+            <column datatype='integer' name='Months_Inactive_12_mon' ordinal='11' />
+            <column datatype='integer' name='Contacts_Count_12_mon' ordinal='12' />
+            <column datatype='real' name='Credit_Limit' ordinal='13' />
+            <column datatype='integer' name='Total_Revolving_Bal' ordinal='14' />
+            <column datatype='real' name='Avg_Open_To_Buy' ordinal='15' />
+            <column datatype='real' name='Total_Amt_Chng_Q4_Q1' ordinal='16' />
+            <column datatype='integer' name='Total_Trans_Amt' ordinal='17' />
+            <column datatype='integer' name='Total_Trans_Ct' ordinal='18' />
+            <column datatype='real' name='Total_Ct_Chng_Q4_Q1' ordinal='19' />
+            <column datatype='real' name='Avg_Utilization_Ratio' ordinal='20' />
+            <column datatype='real' name='Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo' ordinal='21' />
+            <column datatype='real' name='Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Cot_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo 1' ordinal='22' />
+            <column datatype='integer' name='Attrition_Flag_Encoded' ordinal='23' />
+            <column datatype='integer' name='Gender_Encoded' ordinal='24' />
+            <column datatype='real' name='Education_Level_Encoded' ordinal='25' />
+            <column datatype='integer' name='Marital_Status_Encoded' ordinal='26' />
+            <column datatype='string' name='Income_Category_Encoded' ordinal='27' />
+            <column datatype='integer' name='Card_Category_Encoded' ordinal='28' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLIENTNUM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CLIENTNUM]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>CLIENTNUM</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition_Flag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Attrition_Flag]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Attrition_Flag</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer_Age]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Customer_Age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependent_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dependent_count]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Dependent_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education_Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education_Level]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Education_Level</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital_Status]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Marital_Status</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Income_Category]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Income_Category</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Card_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Card_Category]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Card_Category</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months_on_book</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Months_on_book]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Months_on_book</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Relationship_Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Relationship_Count]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Total_Relationship_Count</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months_Inactive_12_mon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Months_Inactive_12_mon]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Months_Inactive_12_mon</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contacts_Count_12_mon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Contacts_Count_12_mon]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Contacts_Count_12_mon</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit_Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Credit_Limit]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Credit_Limit</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Revolving_Bal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Revolving_Bal]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Total_Revolving_Bal</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_Open_To_Buy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_Open_To_Buy]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Avg_Open_To_Buy</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Amt_Chng_Q4_Q1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Amt_Chng_Q4_Q1]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Total_Amt_Chng_Q4_Q1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Trans_Amt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Trans_Amt]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Total_Trans_Amt</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Trans_Ct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Trans_Ct]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Total_Trans_Ct</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Ct_Chng_Q4_Q1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Ct_Chng_Q4_Q1]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Total_Ct_Chng_Q4_Q1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_Utilization_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_Utilization_Ratio]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Avg_Utilization_Ratio</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Cot_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Cot_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo 1]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Cot_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo 1</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition_Flag_Encoded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attrition_Flag_Encoded]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Attrition_Flag_Encoded</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender_Encoded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender_Encoded]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Gender_Encoded</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education_Level_Encoded</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Education_Level_Encoded]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Education_Level_Encoded</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital_Status_Encoded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Marital_Status_Encoded]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Marital_Status_Encoded</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income_Category_Encoded</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Income_Category_Encoded]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Income_Category_Encoded</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Card_Category_Encoded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Card_Category_Encoded]</local-name>
+            <parent-name>[BankChurners_Cleaned_Encoded.csv]</parent-name>
+            <remote-alias>Card_Category_Encoded</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+      <column caption='Attrition Flag Encoded' datatype='integer' name='[Attrition_Flag_Encoded]' role='measure' type='quantitative' />
+      <column caption='Avg Open To Buy' datatype='real' name='[Avg_Open_To_Buy]' role='measure' type='quantitative' />
+      <column caption='Avg Utilization Ratio' datatype='real' name='[Avg_Utilization_Ratio]' role='measure' type='quantitative' />
+      <column caption='Clientnum' datatype='integer' name='[CLIENTNUM]' role='measure' type='quantitative' />
+      <column caption='Card Category' datatype='string' name='[Card_Category]' role='dimension' type='nominal' />
+      <column caption='Card Category Encoded' datatype='integer' name='[Card_Category_Encoded]' role='measure' type='quantitative' />
+      <column caption='Contacts Count 12 mon' datatype='integer' name='[Contacts_Count_12_mon]' role='measure' type='quantitative' />
+      <column caption='Credit Limit' datatype='real' name='[Credit_Limit]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Customer Age (bin)' datatype='integer' name='[Customer Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Customer_Age]' peg='0' size='5' />
+      </column>
+      <column caption='Customer Age' datatype='integer' name='[Customer_Age]' role='measure' type='quantitative' />
+      <column caption='Dependent count' datatype='integer' name='[Dependent_count]' role='measure' type='quantitative' />
+      <column caption='Education Level' datatype='string' name='[Education_Level]' role='dimension' type='nominal' />
+      <column caption='Education Level Encoded' datatype='real' name='[Education_Level_Encoded]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='Gender Encoded' datatype='integer' name='[Gender_Encoded]' role='measure' type='quantitative' />
+      <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+      <column caption='Income Category Encoded' datatype='string' datatype-customized='true' name='[Income_Category_Encoded]' role='dimension' type='nominal' />
+      <column caption='Marital Status' datatype='string' name='[Marital_Status]' role='dimension' type='nominal' />
+      <column caption='Marital Status Encoded' datatype='integer' name='[Marital_Status_Encoded]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Months on book (bin)' datatype='integer' name='[Months on book (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Months_on_book]' peg='0' size='5' />
+      </column>
+      <column caption='Months Inactive 12 mon' datatype='integer' name='[Months_Inactive_12_mon]' role='measure' type='quantitative' />
+      <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+      <column caption='Naive Bayes Classifier Attrition Flag Card Category Contacts Cot 12 mon Dependent count Education Level Months Inactive 12 mo 1' datatype='real' name='[Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Cot_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo 1]' role='measure' type='quantitative' />
+      <column caption='Naive Bayes Classifier Attrition Flag Card Category Contacts Count 12 mon Dependent count Education Level Months Inactive 12 mo' datatype='real' name='[Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Total Relationship Count (bin)' datatype='integer' name='[Total Relationship Count (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Total_Relationship_Count]' peg='0' size='1' />
+      </column>
+      <column caption='Total Amt Chng Q4 Q1' datatype='real' name='[Total_Amt_Chng_Q4_Q1]' role='measure' type='quantitative' />
+      <column caption='Total Ct Chng Q4 Q1' datatype='real' name='[Total_Ct_Chng_Q4_Q1]' role='measure' type='quantitative' />
+      <column caption='Total Relationship Count' datatype='integer' name='[Total_Relationship_Count]' role='measure' type='quantitative' />
+      <column caption='Total Revolving Bal' datatype='integer' name='[Total_Revolving_Bal]' role='measure' type='quantitative' />
+      <column caption='Total Trans Amt' datatype='integer' name='[Total_Trans_Amt]' role='measure' type='quantitative' />
+      <column caption='Total Trans Ct' datatype='integer' name='[Total_Trans_Ct]' role='measure' type='quantitative' />
+      <column caption='BankChurners_Cleaned_Encoded.csv' datatype='table' name='[__tableau_internal_object_id__].[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]' role='measure' type='quantitative' />
+      <column-instance column='[CLIENTNUM]' derivation='Attribute' name='[attr:CLIENTNUM:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Months_on_book]' derivation='Attribute' name='[attr:Months_on_book:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CLIENTNUM]' derivation='Avg' name='[avg:CLIENTNUM:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Customer_Age]' derivation='Avg' name='[avg:Customer_Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Months_on_book]' derivation='Avg' name='[avg:Months_on_book:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CLIENTNUM]' derivation='Count' name='[cnt:CLIENTNUM:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Customer_Age]' derivation='Count' name='[cnt:Customer_Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Months_on_book]' derivation='Count' name='[cnt:Months_on_book:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CLIENTNUM]' derivation='CountD' name='[ctd:CLIENTNUM:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Customer_Age]' derivation='CountD' name='[ctd:Customer_Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Months_on_book]' derivation='CountD' name='[ctd:Months_on_book:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+      <column-instance column='[CLIENTNUM]' derivation='None' name='[none:CLIENTNUM:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Contacts_Count_12_mon]' derivation='None' name='[none:Contacts_Count_12_mon:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Months_on_book]' derivation='None' name='[none:Months_on_book:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk:11]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='RowInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk:12]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[Months on book (bin)]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk:13]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk:15]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Pane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk:9]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[Attrition_Flag]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[CLIENTNUM]' derivation='Sum' name='[sum:CLIENTNUM:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Customer_Age]' derivation='Sum' name='[sum:Customer_Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Months_on_book]' derivation='Sum' name='[sum:Months_on_book:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total_Relationship_Count]' derivation='Sum' name='[sum:Total_Relationship_Count:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='H:/VScode/Hackathon 2/Team5-Hackathon2/Team5-Hackathon2/Tableau_visualisation_e.twb Files/Data/TableauTemp/#TableauTemp_1a2xnen0rjpbci1fii04g0p1umu8.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/10/2025 03:05:20 AM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CLIENTNUM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CLIENTNUM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CLIENTNUM</remote-alias>
+              <ordinal>0</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10127</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attrition_Flag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Attrition_Flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attrition_Flag</remote-alias>
+              <ordinal>1</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Customer_Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dependent_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Dependent_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dependent_count</remote-alias>
+              <ordinal>4</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education_Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education_Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education_Level</remote-alias>
+              <ordinal>5</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital_Status</remote-alias>
+              <ordinal>6</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Income_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income_Category</remote-alias>
+              <ordinal>7</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Card_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Card_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Card_Category</remote-alias>
+              <ordinal>8</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Months_on_book</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Months_on_book]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Months_on_book</remote-alias>
+              <ordinal>9</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Relationship_Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Relationship_Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Relationship_Count</remote-alias>
+              <ordinal>10</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Months_Inactive_12_mon</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Months_Inactive_12_mon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Months_Inactive_12_mon</remote-alias>
+              <ordinal>11</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contacts_Count_12_mon</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Contacts_Count_12_mon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contacts_Count_12_mon</remote-alias>
+              <ordinal>12</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Credit_Limit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Credit_Limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Credit_Limit</remote-alias>
+              <ordinal>13</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3556</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Revolving_Bal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Revolving_Bal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Revolving_Bal</remote-alias>
+              <ordinal>14</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2015</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg_Open_To_Buy</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg_Open_To_Buy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg_Open_To_Buy</remote-alias>
+              <ordinal>15</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3796</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Amt_Chng_Q4_Q1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total_Amt_Chng_Q4_Q1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Amt_Chng_Q4_Q1</remote-alias>
+              <ordinal>16</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1162</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Trans_Amt</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Trans_Amt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Trans_Amt</remote-alias>
+              <ordinal>17</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3480</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Trans_Ct</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Trans_Ct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Trans_Ct</remote-alias>
+              <ordinal>18</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>140</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Ct_Chng_Q4_Q1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total_Ct_Chng_Q4_Q1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Ct_Chng_Q4_Q1</remote-alias>
+              <ordinal>19</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>835</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg_Utilization_Ratio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg_Utilization_Ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg_Utilization_Ratio</remote-alias>
+              <ordinal>20</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1180</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo</remote-alias>
+              <ordinal>21</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1250</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Cot_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo 1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Cot_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Cot_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo 1</remote-alias>
+              <ordinal>22</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>438</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attrition_Flag_Encoded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Attrition_Flag_Encoded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attrition_Flag_Encoded</remote-alias>
+              <ordinal>23</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender_Encoded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gender_Encoded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender_Encoded</remote-alias>
+              <ordinal>24</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education_Level_Encoded</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Education_Level_Encoded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education_Level_Encoded</remote-alias>
+              <ordinal>25</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital_Status_Encoded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Marital_Status_Encoded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital_Status_Encoded</remote-alias>
+              <ordinal>26</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income_Category_Encoded</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Income_Category_Encoded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income_Category_Encoded</remote-alias>
+              <ordinal>27</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Card_Category_Encoded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Card_Category_Encoded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Card_Category_Encoded</remote-alias>
+              <ordinal>28</ordinal>
+              <family>BankChurners_Cleaned_Encoded.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:Customer_Age:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[cnt:Customer_Age:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[ctd:Customer_Age:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:Customer_Age:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[attr:Months_on_book:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:Months_on_book:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[cnt:Months_on_book:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[ctd:Months_on_book:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Months_on_book:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:Months_on_book:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:Total_Relationship_Count:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[attr:CLIENTNUM:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:CLIENTNUM:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[cnt:CLIENTNUM:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[ctd:CLIENTNUM:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:CLIENTNUM:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Contacts_Count_12_mon:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk:11]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk:12]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk:13]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk:15]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk:3]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk:9]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:CLIENTNUM:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Income_Category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;$40K - $60K&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Less than $40K&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;$120K +&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;$80K - $120K&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;$60K - $80K&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Attrition_Flag:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Existing Customer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Attrited Customer&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='BankChurners_Cleaned_Encoded.csv' id='BankChurners_Cleaned_Encoded.csv_D758BD89F0784E6A846B0EA3DBB0D4F7'>
+            <properties context=''>
+              <relation connection='textscan.1hx2gc40e7mdqs18vrkug0cqiyd9' name='BankChurners_Cleaned_Encoded.csv' table='[BankChurners_Cleaned_Encoded#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='CLIENTNUM' ordinal='0' />
+                  <column datatype='string' name='Attrition_Flag' ordinal='1' />
+                  <column datatype='integer' name='Customer_Age' ordinal='2' />
+                  <column datatype='string' name='Gender' ordinal='3' />
+                  <column datatype='integer' name='Dependent_count' ordinal='4' />
+                  <column datatype='string' name='Education_Level' ordinal='5' />
+                  <column datatype='string' name='Marital_Status' ordinal='6' />
+                  <column datatype='string' name='Income_Category' ordinal='7' />
+                  <column datatype='string' name='Card_Category' ordinal='8' />
+                  <column datatype='integer' name='Months_on_book' ordinal='9' />
+                  <column datatype='integer' name='Total_Relationship_Count' ordinal='10' />
+                  <column datatype='integer' name='Months_Inactive_12_mon' ordinal='11' />
+                  <column datatype='integer' name='Contacts_Count_12_mon' ordinal='12' />
+                  <column datatype='real' name='Credit_Limit' ordinal='13' />
+                  <column datatype='integer' name='Total_Revolving_Bal' ordinal='14' />
+                  <column datatype='real' name='Avg_Open_To_Buy' ordinal='15' />
+                  <column datatype='real' name='Total_Amt_Chng_Q4_Q1' ordinal='16' />
+                  <column datatype='integer' name='Total_Trans_Amt' ordinal='17' />
+                  <column datatype='integer' name='Total_Trans_Ct' ordinal='18' />
+                  <column datatype='real' name='Total_Ct_Chng_Q4_Q1' ordinal='19' />
+                  <column datatype='real' name='Avg_Utilization_Ratio' ordinal='20' />
+                  <column datatype='real' name='Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo' ordinal='21' />
+                  <column datatype='real' name='Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Cot_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mo 1' ordinal='22' />
+                  <column datatype='integer' name='Attrition_Flag_Encoded' ordinal='23' />
+                  <column datatype='integer' name='Gender_Encoded' ordinal='24' />
+                  <column datatype='real' name='Education_Level_Encoded' ordinal='25' />
+                  <column datatype='integer' name='Marital_Status_Encoded' ordinal='26' />
+                  <column datatype='string' name='Income_Category_Encoded' ordinal='27' />
+                  <column datatype='integer' name='Card_Category_Encoded' ordinal='28' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <nav-action caption='GoToSheet1' name='[Action1_471C0C2C166C445A9F8907C1D9CAB960]'>
+      <activation type='on-select' />
+      <source dashboard='Hypothesis 4' type='sheet' worksheet='Customer Tenure vs. Churn Rate' />
+      <params>
+        <param name='sheet' value='Customer Tenure vs. Churn Rate (2)' />
+        <param name='single-select' value='' />
+      </params>
+    </nav-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Age Group vs. Tenure (Heatmap)'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/AgeGroupvs_TenureHeatmap?rev=' id='111972059' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column caption='Clientnum' datatype='integer' name='[CLIENTNUM]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Customer Age (bin)' datatype='integer' name='[Customer Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Customer_Age]' peg='0' size='5' />
+            </column>
+            <column caption='Customer Age' datatype='integer' name='[Customer_Age]' role='measure' type='quantitative' />
+            <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+            <column-instance column='[Months_on_book]' derivation='Avg' name='[avg:Months_on_book:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Age (bin)]' derivation='None' name='[none:Customer Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CLIENTNUM]' derivation='Sum' name='[sum:CLIENTNUM:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:CLIENTNUM:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:CLIENTNUM:qk]' />
+              <lod column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+              <size column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:CLIENTNUM:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='8.9010410308837891' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:Months_on_book:qk]</rows>
+        <cols>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Customer Age (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{503D52C8-BBC8-4FC0-9F75-A06396BFCE8A}' />
+    </worksheet>
+    <worksheet name='Age Group vs. Tenure (Stacked Bar Chart)'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/AgeGroupvs_TenureStackedBarChart?rev=' id='111972061' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Customer Age (bin)' datatype='integer' name='[Customer Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Customer_Age]' peg='0' size='5' />
+            </column>
+            <column caption='Customer Age' datatype='integer' name='[Customer_Age]' role='measure' type='quantitative' />
+            <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+            <column-instance column='[Months_on_book]' derivation='Avg' name='[avg:Months_on_book:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Age (bin)]' derivation='None' name='[none:Customer Age (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:Months_on_book:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:Months_on_book:qk]</rows>
+        <cols>([federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Customer Age (bin):ok] / [federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk])</cols>
+      </table>
+      <simple-id uuid='{9BA3BC39-6835-4332-8ADF-AB6DB4872C66}' />
+    </worksheet>
+    <worksheet name='Credit Utilization vs. Churn'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/CreditUtilizationvs_Churn?rev=' id='111972065' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column caption='Avg Open To Buy' datatype='real' name='[Avg_Open_To_Buy]' role='measure' type='quantitative' />
+            <column caption='Avg Utilization Ratio' datatype='real' name='[Avg_Utilization_Ratio]' role='measure' type='quantitative' />
+            <column caption='Contacts Count 12 mon' datatype='integer' name='[Contacts_Count_12_mon]' role='measure' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Avg_Open_To_Buy]' derivation='None' name='[none:Avg_Open_To_Buy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Avg_Utilization_Ratio]' derivation='None' name='[none:Avg_Utilization_Ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Contacts_Count_12_mon]' derivation='None' name='[none:Contacts_Count_12_mon:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+              <size column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Contacts_Count_12_mon:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Avg_Open_To_Buy:qk]</rows>
+        <cols>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Avg_Utilization_Ratio:qk]</cols>
+      </table>
+      <simple-id uuid='{3551D2C0-C033-457F-B9E5-03B79127BA4A}' />
+    </worksheet>
+    <worksheet name='Customer Tenure vs. Churn Rate'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/CustomerTenurevs_ChurnRate?rev=' id='111972066' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column caption='Clientnum' datatype='integer' name='[CLIENTNUM]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Months on book (bin)' datatype='integer' name='[Months on book (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Months_on_book]' peg='0' size='5' />
+            </column>
+            <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+            <column-instance column='[CLIENTNUM]' derivation='Count' name='[cnt:CLIENTNUM:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Months on book (bin)]' derivation='None' name='[none:Months on book (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[cnt:CLIENTNUM:qk]</rows>
+        <cols>([federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Months on book (bin):ok] / [federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk])</cols>
+      </table>
+      <simple-id uuid='{02B00438-8565-4615-BA18-43B4ACFFEA95}' />
+    </worksheet>
+    <worksheet name='Customer Tenure vs. Churn Rate (2)'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/CustomerTenurevs_ChurnRate2?rev=' id='111972067' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column caption='Clientnum' datatype='integer' name='[CLIENTNUM]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Months on book (bin)' datatype='integer' name='[Months on book (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Months_on_book]' peg='0' size='5' />
+            </column>
+            <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Months on book (bin)]' derivation='None' name='[none:Months on book (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk:3]</rows>
+        <cols>([federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Months on book (bin):ok] / [federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk])</cols>
+      </table>
+      <simple-id uuid='{BD7063F0-F641-432A-ACBE-4AE814678E6F}' />
+    </worksheet>
+    <worksheet name='Gender vs. Tenure'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/Gendervs_Tenure?rev=' id='111972056' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Months_on_book]' derivation='Sum' name='[sum:Months_on_book:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline0' value='bp_green' />
+            <format attr='boxplot-style' id='refline0' value='classic-two-tone' />
+            <format attr='stroke-size' id='refline0' value='2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Gender:nk]' />
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:Months_on_book:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:Months_on_book:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:Months_on_book:qk]</rows>
+        <cols />
+        <show-full-range>
+          <column>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[Months on book (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{69B5AE13-1859-44C0-B388-CB08774C0241}' />
+    </worksheet>
+    <worksheet name='Gender vs. Tenure (2)'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/Gendervs_Tenure2?rev=' id='111972058' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column caption='Clientnum' datatype='integer' name='[CLIENTNUM]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+            <column-instance column='[CLIENTNUM]' derivation='Count' name='[cnt:CLIENTNUM:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Months_on_book]' derivation='Sum' name='[sum:Months_on_book:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline0' value='bp_green' />
+            <format attr='boxplot-style' id='refline0' value='classic-two-tone' />
+            <format attr='stroke-size' id='refline0' value='2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+              <lod column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[cnt:CLIENTNUM:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:Months_on_book:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:Months_on_book:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:Months_on_book:qk]</rows>
+        <cols>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Gender:nk]</cols>
+        <show-full-range>
+          <column>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[Months on book (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{30D3412A-3053-45A1-9882-E6ED23876E91}' />
+    </worksheet>
+    <worksheet name='Gender vs. Tenure (3)'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/Gendervs_Tenure3?rev=' id='111972057' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column caption='Avg Utilization Ratio' datatype='real' name='[Avg_Utilization_Ratio]' role='measure' type='quantitative' />
+            <column caption='Clientnum' datatype='integer' name='[CLIENTNUM]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+            <column-instance column='[Avg_Utilization_Ratio]' derivation='Avg' name='[avg:Avg_Utilization_Ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Months_on_book]' derivation='None' name='[none:Months_on_book:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:Avg_Utilization_Ratio:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline0' value='bp_green' />
+            <format attr='boxplot-style' id='refline0' value='classic-two-tone' />
+            <format attr='stroke-size' id='refline0' value='2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:Avg_Utilization_Ratio:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk] + [federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:Avg_Utilization_Ratio:qk])</rows>
+        <cols>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Months_on_book:qk]</cols>
+        <show-full-range>
+          <column>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[Months on book (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{F415A55E-5D80-42CC-AE7C-0E47020147DD}' />
+    </worksheet>
+    <worksheet name='Income Category vs Churn Rate'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/IncomeCategoryvsChurnRate?rev=' id='111972063' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column caption='Clientnum' datatype='integer' name='[CLIENTNUM]' role='measure' type='quantitative' />
+            <column caption='Income Category' datatype='string' name='[Income_Category]' role='dimension' type='nominal' />
+            <column-instance column='[CLIENTNUM]' derivation='Count' name='[cnt:CLIENTNUM:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Income_Category]' derivation='None' name='[none:Income_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Income_Category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[cnt:CLIENTNUM:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Income_Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk:3]</rows>
+        <cols>([federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk] / [federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Income_Category:nk])</cols>
+      </table>
+      <simple-id uuid='{5CC13847-E4FE-4B8F-9E7E-2A84B1ED4040}' />
+    </worksheet>
+    <worksheet name='Number of Products Owned vs. Churn Rate'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/NumberofProductsOwnedvs_ChurnRate?rev=' id='111972064' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column caption='Clientnum' datatype='integer' name='[CLIENTNUM]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Total Relationship Count (bin)' datatype='integer' name='[Total Relationship Count (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Total_Relationship_Count]' peg='0' size='1' />
+            </column>
+            <column caption='Total Relationship Count' datatype='integer' name='[Total_Relationship_Count]' role='measure' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Relationship Count (bin)]' derivation='None' name='[none:Total Relationship Count (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CLIENTNUM]' derivation='Count' name='[pcto:cnt:CLIENTNUM:qk:9]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[Attrition_Flag]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[pcto:cnt:CLIENTNUM:qk:9]</rows>
+        <cols>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Total Relationship Count (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[Total Relationship Count (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{1BBE8017-A235-4FED-B1F5-4F5043365AC5}' />
+    </worksheet>
+    <worksheet name='Transaction Trends over Time'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/TransactionTrendsoverTime?rev=' id='111972062' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BankChurners_Cleaned_Encoded' name='federated.0fn1nmz1mzs8dv1fta3f60mejrnm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fn1nmz1mzs8dv1fta3f60mejrnm'>
+            <column caption='Attrition Flag' datatype='string' name='[Attrition_Flag]' role='dimension' type='nominal' />
+            <column caption='Months on book' datatype='integer' name='[Months_on_book]' role='measure' type='quantitative' />
+            <column caption='Total Trans Ct' datatype='integer' name='[Total_Trans_Ct]' role='measure' type='quantitative' />
+            <column-instance column='[Total_Trans_Ct]' derivation='Avg' name='[avg:Total_Trans_Ct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition_Flag]' derivation='None' name='[none:Attrition_Flag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Months_on_book]' derivation='None' name='[none:Months_on_book:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[avg:Total_Trans_Ct:qk]</rows>
+        <cols>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Months_on_book:qk]</cols>
+      </table>
+      <simple-id uuid='{1D3BF379-BC26-47A2-978F-28D4D045BB25}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Further Analysis'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/FurtherAnalysis?rev=' id='111972076' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='5' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{39517639-CA70-4429-AA78-14C708B222B3}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Hypothesis 1'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/Hypothesis1?rev=' id='111972074' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='5' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9409D18E-F820-4DE0-BF65-3E626AB49C0B}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Hypothesis 2'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/Hypothesis2?rev=' id='111972073' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97994' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1003'>
+            <zone h='97994' id='5' type-v2='layout-basic' w='72923' x='1231' y='1003'>
+              <zone h='97994' id='3' name='Income Category vs Churn Rate' w='72923' x='1231' y='1003'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97994' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='24615' x='74154' y='1003'>
+              <zone h='18296' id='8' name='Income Category vs Churn Rate' pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Income_Category:nk]' type-v2='color' w='24615' x='74154' y='1003'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='11' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='97994' id='3' is-fixed='true' name='Income Category vs Churn Rate' w='72923' x='1231' y='1003'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18296' id='8' name='Income Category vs Churn Rate' pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Income_Category:nk]' type-v2='color' w='24615' x='74154' y='1003'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E819D12D-2768-4CFF-A567-50C0ADC80E7C}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Hypothesis 3'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/Hypothesis3?rev=' id='111972070' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97994' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1003'>
+            <zone h='97994' id='5' type-v2='layout-basic' w='72923' x='1231' y='1003'>
+              <zone h='97994' id='3' name='Age Group vs. Tenure (Stacked Bar Chart)' w='72923' x='1231' y='1003'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97994' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='24615' x='74154' y='1003'>
+              <zone h='8271' id='8' name='Age Group vs. Tenure (Stacked Bar Chart)' pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type-v2='color' w='24615' x='74154' y='1003'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='11' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='97994' id='3' is-fixed='true' name='Age Group vs. Tenure (Stacked Bar Chart)' w='72923' x='1231' y='1003'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8271' id='8' name='Age Group vs. Tenure (Stacked Bar Chart)' pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type-v2='color' w='24615' x='74154' y='1003'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C1984DCD-5AE2-4F91-8885-BBCF1DE1775E}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Hypothesis 4'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/Hypothesis4?rev=' id='111972069' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_9' value='center' />
+          <format attr='vertical-align' id='dash-text_9' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88220' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='10777'>
+            <zone h='88220' id='5' type-v2='layout-basic' w='97538' x='1231' y='10777'>
+              <zone h='44110' id='3' name='Number of Products Owned vs. Churn Rate' w='48769' x='1231' y='54887'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44110' id='12' name='Customer Tenure vs. Churn Rate' w='97538' x='1231' y='10777'>
+                <layout-cache cell-count-w='20' minheight='360' non-cell-size-w='67' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44110' id='13' name='Credit Utilization vs. Churn' w='48769' x='50000' y='54887'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9774' id='9' type-v2='text' w='97538' x='1231' y='1003'>
+            <formatted-text>
+              <run>Credit Card Churn</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='3008' id='11' type-v2='dashboard-object' w='3692' x='0' y='54887'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{A632AC0C-B605-4F86-846A-4AE297C653FE}&quot; zone-id=&quot;11&quot; zone-ids=[10]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='16' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='9774' id='9' type-v2='text' w='97538' x='1231' y='1003'>
+                  <formatted-text>
+                    <run>Credit Card Churn</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44110' id='12' is-fixed='true' name='Customer Tenure vs. Churn Rate' w='97538' x='1231' y='10777'>
+                  <layout-cache cell-count-w='20' minheight='360' non-cell-size-w='67' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44110' id='3' is-fixed='true' name='Number of Products Owned vs. Churn Rate' w='48769' x='1231' y='54887'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44110' id='13' is-fixed='true' name='Credit Utilization vs. Churn' w='48769' x='50000' y='54887'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C1497AE2-0097-425D-9C2E-C7E19BBCBDBE}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Landing Page'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Tableau_visualisation_e_17391748116250/LandingPage?rev=' id='111972068' path='/workbooks/Tableau_visualisation_e_17391748116250' revision='' />
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_14' value='center' />
+          <format attr='vertical-align' id='dash-text_14' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='4758' id='3' type-v2='text' w='97538' x='1231' y='1014'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='20'>Credit Card Churn DashBoard</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='93214' id='12' param='vert' type-v2='layout-flow' w='48769' x='1231' y='5772'>
+            <zone forceUpdate='true' h='5703' id='14' type-v2='text' w='48769' x='1231' y='5772'>
+              <formatted-text>
+                <run bold='true' fontsize='20'>Hypothesis: Navigation</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6591' id='21' type-v2='dashboard-object' w='48769' x='1231' y='11475'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{AACEC893-AF4D-4D06-8916-4E727F0445E1}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Hypothesis 1: Women are more likely to churn</caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='border-color' value='#000000' />
+                </button-visual-state>
+              </button>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6591' id='20' type-v2='dashboard-object' w='48769' x='1231' y='18066'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{47D06D89-66A2-4686-A191-28622390EEB5}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Hypothesis 2:</caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='border-color' value='#000000' />
+                </button-visual-state>
+              </button>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6591' id='23' type-v2='dashboard-object' w='48769' x='1231' y='24657'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{3D08F829-838F-4C52-9FD1-57BBD5894F4B}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Hypothesis 3:</caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='border-color' value='#000000' />
+                </button-visual-state>
+              </button>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6591' id='22' type-v2='dashboard-object' w='48769' x='1231' y='31248'>
+              <button action='tabdoc:goto-sheet window-id=&quot;{A632AC0C-B605-4F86-846A-4AE297C653FE}&quot;' button-type='text'>
+                <button-visual-state>
+                  <caption>Hypothesis 4: </caption>
+                  <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                  <format attr='background-color' value='#333333' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='border-color' value='#000000' />
+                </button-visual-state>
+              </button>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='93214' id='24' param='vert' type-v2='layout-flow' w='48769' x='50000' y='5772' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97972' id='27' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1014'>
+                <zone forceUpdate='true' h='4758' id='3' type-v2='text' w='97538' x='1231' y='1014'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='20'>Credit Card Churn DashBoard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5703' id='14' type-v2='text' w='48769' x='1231' y='5772'>
+                  <formatted-text>
+                    <run bold='true' fontsize='20'>Hypothesis: Navigation</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6591' id='21' type-v2='dashboard-object' w='48769' x='1231' y='11475'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{AACEC893-AF4D-4D06-8916-4E727F0445E1}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Hypothesis 1: Women are more likely to churn</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                      <format attr='background-color' value='#333333' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='border-color' value='#000000' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6591' id='20' type-v2='dashboard-object' w='48769' x='1231' y='18066'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{47D06D89-66A2-4686-A191-28622390EEB5}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Hypothesis 2:</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                      <format attr='background-color' value='#333333' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='border-color' value='#000000' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6591' id='23' type-v2='dashboard-object' w='48769' x='1231' y='24657'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{3D08F829-838F-4C52-9FD1-57BBD5894F4B}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Hypothesis 3:</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                      <format attr='background-color' value='#333333' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='border-color' value='#000000' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6591' id='22' type-v2='dashboard-object' w='48769' x='1231' y='31248'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{A632AC0C-B605-4F86-846A-4AE297C653FE}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>Hypothesis 4: </caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' />
+                      <format attr='background-color' value='#333333' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='border-color' value='#000000' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2F266B33-3077-452E-8F76-260E5CA0E33E}' />
+    </dashboard>
+  </dashboards>
+  <windows film-mode='true' source-height='30'>
+    <window class='worksheet' name='Gender vs. Tenure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FCF90876-EE2F-4EF2-BCAE-6B7BE7409D99}' />
+    </window>
+    <window class='worksheet' name='Gender vs. Tenure (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]</field>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Gender:nk]</field>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Months_on_book:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6706924A-7717-44D5-8803-131CE5F76C3A}' />
+    </window>
+    <window class='worksheet' name='Gender vs. Tenure (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BC834CA1-865C-40AC-9E42-CB08605F5D2F}' />
+    </window>
+    <window class='worksheet' name='Age Group vs. Tenure (Heatmap)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:CLIENTNUM:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:CLIENTNUM:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[sum:CLIENTNUM:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DB3476D0-27B9-4F44-AB84-465562FD67A0}' />
+    </window>
+    <window class='worksheet' name='Age Group vs. Tenure (Stacked Bar Chart)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FEB5373A-BAC4-4031-B5EA-B9ACFA001B3C}' />
+    </window>
+    <window class='worksheet' name='Transaction Trends over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4604B8B8-990D-42BE-B227-B13A1EAAEEA6}' />
+    </window>
+    <window class='worksheet' name='Income Category vs Churn Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Income_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EBD7EF8B-E87D-422D-9631-298AD6C89F6A}' />
+    </window>
+    <window class='worksheet' name='Number of Products Owned vs. Churn Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6CFF7B9C-3860-4F66-858C-86BFBC07C76A}' />
+    </window>
+    <window class='worksheet' name='Credit Utilization vs. Churn'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='6' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type='color' />
+            <card pane-specification-id='6' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Contacts_Count_12_mon:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Avg_Utilization_Ratio:qk]</field>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Contacts_Count_12_mon:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{90BA9FF9-A976-43E7-9A93-A640230C71AF}' />
+    </window>
+    <window class='worksheet' name='Customer Tenure vs. Churn Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E84BD02F-8F58-40DF-B364-36DD6A65DD86}' />
+    </window>
+    <window class='worksheet' name='Customer Tenure vs. Churn Rate (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6BE1D177-E460-45BB-A230-DA772254E079}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Landing Page'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{15B08232-36D0-4BD1-8E15-3042407FFB30}' />
+    </window>
+    <window class='dashboard' name='Hypothesis 4'>
+      <viewpoints>
+        <viewpoint name='Credit Utilization vs. Churn'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Customer Tenure vs. Churn Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of Products Owned vs. Churn Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A632AC0C-B605-4F86-846A-4AE297C653FE}' />
+    </window>
+    <window class='dashboard' name='Hypothesis 3'>
+      <viewpoints>
+        <viewpoint name='Age Group vs. Tenure (Stacked Bar Chart)'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0fn1nmz1mzs8dv1fta3f60mejrnm].[none:Attrition_Flag:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3D08F829-838F-4C52-9FD1-57BBD5894F4B}' />
+    </window>
+    <window class='dashboard' name='Hypothesis 2'>
+      <viewpoints>
+        <viewpoint name='Income Category vs Churn Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{47D06D89-66A2-4686-A191-28622390EEB5}' />
+    </window>
+    <window class='dashboard' name='Hypothesis 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{AACEC893-AF4D-4D06-8916-4E727F0445E1}' />
+    </window>
+    <window class='dashboard' name='Further Analysis'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{01E3B260-18AB-40CF-A1C4-E2520E15406F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Landing Page' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
