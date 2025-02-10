@@ -105,10 +105,13 @@ We have only 16.07% of customers who have churned.
 * The fact that the data was around credit and debt and the customers aim was to increase loyalty raised potential issues around health/safe debt which were beyond the scope of this project.
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+* Dashboard 1 - Churn Rate by Gender & Churn Rate by Age Group
+* Dashboard 2 - Relationship between transactions and churn & Churn by Income Category
+
+* Conclusion: Diffrence between genders not significant enough to confirm the hypothes that "Women have a higher chance of leaving than a men. "
+Hyphotes that "There are specific ages group more likely to leave" was confirmed
+Customers with lower transaction counts and amounts are more likely to churn, while higher transaction activity correlates with retention. Monitoring changes in transaction behavior over time can help predict and prevent customer attrition.
+Hypothes that "Customers with unknown income are more likely to leave" was rejected.
 
 ## Unfixed Bugs
 * By the end of the project one of the Team still did not have a working VSCode install and had contributed little to the project as they also struggled to commit data to GitHub.

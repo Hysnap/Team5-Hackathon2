@@ -1,0 +1,45 @@
+Category changes,
+adult.csv,BankChurners_Cleaned_Encoded.csv
+Age,Customer_Age
+Workclass,"(No direct match, possibly omit)"
+Final Weight,"(No direct match, possibly omit)"
+Education,Education_Level
+EducationNum,Education_Level_Encoded (if needed)
+Marital Status,Marital_Status
+Occupation,"(No direct match, possibly omit)"
+Relationship,"(No direct match, possibly omit)"
+Race,"(No direct match, possibly omit)"
+Gender,Gender
+Capital Gain,"(No direct match, possibly omit)"
+Capital Loss,"(No direct match, possibly omit)"
+Hours per Week,"(No direct match, possibly omit)"
+Native Country,"(No direct match, possibly omit)"
+Income,Income_Category
+,
+Marital_Status,
+Original Value,Updated Value
+Married-civ-spouse,Married
+Married-AF-spouse,Married
+Married-spouse-absent,Married
+Never-Married,Single
+Divorced,Divorced
+Separated,Separated
+Widowed,Widowed
+,
+Education_Level,
+Original Value,Updated Value
+Masters,Post-Graduate
+Doctorate,Post-Graduate
+College,Graduate
+Some-college,Graduate
+HS-grad,Graduate
+Assoc-acdm,High School
+Assoc-voc,High School
+7th-8th,Uneducated
+9th,Uneducated
+10th,Uneducated
+11th,Uneducated
+12th,Uneducated
+5th-6th,Uneducated
+1st-4th,Uneducated
+Preschool,Uneducated
