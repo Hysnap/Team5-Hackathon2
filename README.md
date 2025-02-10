@@ -73,10 +73,6 @@ We have only 16.07% of customers who have churned.
 * Undertake analysis to prove/disprove hypothesis
 * Data Architects to undertake T-Tests on hypothesis and make results available to Data Analysts
 * Compare Bank customer population vs American Census population to identify potentially missed opportunities.
-* Create Machine learning model based off customer attributes Identified to have statistical relevance to attrition
-    * Use random Sample of 75% to train model
-    * Use remaining 25% to test model
-    * if model is robust - include in dashboard customers identified as most likely to attrite.
 * Produce commentary of hypothesis results and analysis
 
 ## The rationale to map the business requirements to the Data Visualisations
@@ -91,16 +87,22 @@ We have only 16.07% of customers who have churned.
     * Comparison of attrition rates by Age Groups
     * Comparison of Attrition rate of age groups vs population average
 * Customers with unknown income are more likely to leave.
+    * Comparison of Attrition rate by Income category to confirm if Unknown is more or less at risk.
 
 ## Analysis techniques used
 * List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+    * Comparison of Attrition Rate aka Churn - defined as Attrited Customer as a Percentage of relevant population was undertaken against numerous potential impactful    measures.
+    * This analysis was normalised by group in order to enable comparison for identification of relevance/impact.
+* The core ETL was undertaken in Python and the encoding of text fields was prepared so that it would be available for use as part of the Data Analysis
+    * Data Analysis was primarily undertaken in Tableau - initially each of the Data analysts undertook seperate investigations, but an attempt to merge this work proved futile and from that point on the work collaporatively on a single file.
+    * Calculation of the T-test results for the hypothesis was undertaken with guidance from ChatGPt by the Data Architects in python to enable them to provide additional depth of understanding to the Data Analysts/
+* The data was a single snapshot of customer state, several iterations of the data would of allowed for analysis of pre-emptive behaviour to better identify potential  
+    churn risk factors and their relevance.
+* During Ideation - ChatGPT was asked to identify potential relevant items for investigation and for guidance on types of visualisations that could be relevant.
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+* The data was anonlymised so there was no private data issues.
+* The fact that the data was around credit and debt and the customers aim was to increase loyalty raised potential issues around health/safe debt which were beyond the scope of this project.
 
 ## Dashboard Design
 * Dashboard 1 - Churn Rate by Gender & Churn Rate by Age Group
@@ -113,28 +115,33 @@ Customers with lower transaction counts and amounts are more likely to churn, wh
 Hypothes that "Customers with unknown income are more likely to leave" was rejected.
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* By the end of the project one of the Team still did not have a working VSCode install and had contributed little to the project as they also struggled to commit data to GitHub.
+* Time spent trying to support this team member meant that the team didnt achieve it max potential.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+* With 2 Data Analysts we looked to see if through using XML versions of the Tableau files we could enable parrallel development that would be combined later.  Alas due to the way that unique identifiers are allocated to data sets in Tableau this proved not possible.  Once this had been identified as not possible the data analysts worked in tandem on the same file using remote connects to discuss and support each other.
+* Based on the project experience more knowledge is desirable around merge conflict resolution in GitHub, the benefit of Branching over Forking along with the associated issues.  Greater knowledge of interactivity in Tableau.
 
 ## Main Data Analysis Libraries
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* LMS, Chatgpt and the team as a whole.
 
 ### Content 
 
 - The column details were taken from Kaggle along with the original Data.
-- 
-- 
 
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+- Initial Ideation ChatGPT feedback is - "Initial Idiation ChatGPT Freedback.ipynb"
+
+- The final ETL is - "ETL hackaton2 ETL new.py"
+- The final core dataset is  - "BankChurners_Cleaned_Encoded.csv"
+- The final dashboard is the "FInal Submission Documents\team5 assestment.twbx"
+
+- A suplimentary data set of USA census population data that was prepared with the hope of inclusion in the final project but was not included is "adult_final.csv"
+- A prototype of the charts potentially for inclusion based of the census data compared to the BankChurners data is include in "PowerBI_PopulationComparison.pbix" - this was not integrated into the final dashboard.
+
+- The "Prep and Investigations" folder contains rough workings and future inclusion investigations undertaken by the team during the project.
+
 
