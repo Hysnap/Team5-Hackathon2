@@ -103,14 +103,13 @@ We have only 16.07% of customers who have churned.
 * How did you overcome any legal or societal issues?
 
 ## Dashboard Design
-Dashboard 1 - Churn Rate by Gender & Churn Rate by Age Group
+* Dashboard 1 - Churn Rate by Gender & Churn Rate by Age Group
+* Dashboard 2 - Relationship between transactions and churn & Churn by Income Category
 
-Dashboard 2 - Relationship between transactions and churn & Churn by Income Category
-
-
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+* Conclusion: Diffrence between genders not significant enough to confirm the hypothes that "Women have a higher chance of leaving than a men. "
+Hyphotes that "There are specific ages group more likely to leave" was confirmed
+Customers with lower transaction counts and amounts are more likely to churn, while higher transaction activity correlates with retention. Monitoring changes in transaction behavior over time can help predict and prevent customer attrition.
+Hypothes that "Customers with unknown income are more likely to leave" was rejected.
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
