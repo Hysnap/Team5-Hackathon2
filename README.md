@@ -106,7 +106,8 @@ We have only 16.07% of customers who have churned.
 * Dashboard 1 - Churn Rate by Gender & Churn Rate by Age Group
 * Dashboard 2 - Relationship between transactions and churn & Churn by Income Category
 
-* Conclusion: Diffrence between genders not significant enough to confirm the hypothes that "Women have a higher chance of leaving than a men. "
+* Conclusion: 
+Difference between genders not significant enough to confirm the hypothes that "Women have a higher chance of leaving than a men. "
 Hyphotes that "There are specific ages group more likely to leave" was confirmed
 Customers with lower transaction counts and amounts are more likely to churn, while higher transaction activity correlates with retention. Monitoring changes in transaction behavior over time can help predict and prevent customer attrition.
 Hypothes that "Customers with unknown income are more likely to leave" was rejected.
