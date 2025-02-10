@@ -1,12 +1,10 @@
-# Team 5 : Datga Analytics and AI BootCamp - Hactathon 2
+# Team 5 : Data Analytics and AI BootCamp - Hactathon 2
 
 A manager at the bank is disturbed with more and more customers leaving their credit card services. They would really appreciate if one could predict for them who is gonna get churned so they can proactively go to the customer to provide them better services and turn customers' decisions in the opposite direction
 
-I got this dataset from a website with the URL as https://leaps.analyttica.com/home. I have been using this for a while to get datasets and accordingly work on them to produce fruitful results. The site explains how to solve a particular business problem.
-
 Now, this dataset consists of 10,000 customers mentioning their age, salary, marital_status, credit card limit, credit card category, etc. There are nearly 18 features.
 
-We have only 16.07% of customers who have churned. Thus, it's a bit difficult to train our model to predict churning customers.
+We have only 16.07% of customers who have churned. 
 
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
@@ -38,8 +36,8 @@ We have only 16.07% of customers who have churned. Thus, it's a bit difficult to
     - Total_Trans_Ct - Total Transaction Count (Last 12 months)
     - Total_Ct_Chng_Q4_Q1 - Change in Transaction Count (Q4 over Q1)
     - Avg_Utilization_Ratio - Average Card Utilization Ratio
-    - Naives_Bayes_1 - Naives Bayes Attrition Flag Category - Historic Analysis - Ignore
-    - Naives_Bayes_2 - Naives Bayes Attrition Flag Category - Historic Analysis - Ignore
+    - Naives_Bayes_1 - Naives Bayes Attrition Flag Category - Historic Analysis - Ignored
+    - Naives_Bayes_2 - Naives Bayes Attrition Flag Category - Historic Analysis - Ignored
 
 ## Business Requirements
 * A manager at the bank is disturbed with more and more customers leaving their credit card services. They would really appreciate if one could predict for them who is gonna get churned so they can proactively go to the customer to provide them better services and turn customers' decisions in the opposite direction
@@ -51,14 +49,35 @@ We have only 16.07% of customers who have churned. Thus, it's a bit difficult to
 
 ## Hypothesis and how to validate?
 * Women have a higher chance of leaving
+   * Compare the level of customer attrition for Women vs Men
+   * Undertake T-test to confirm if any variance identified is statistically relevant
 * There are specific ages group more likely to leave
+   * Create Age Groups for analysis
+   * Compare the level of customer attrition By age group
+   * Undertake T-test to confirm if any variance identified is statistically relevant
 * We can forcast chance of leaving based on number of transactions
+   * Compare the level of customer attrition vs Total transactions Count
+   * Compare the level of customer attrition vs Change in transaction count Q4 to Q1
+   * Compare the level of customer attrition vs Average Utilization Ratio
+   * Undertake T-test to confirm if any variance identified is statistically relevant
 * Customers with unknown income are more likely to leave.
+   * Compare the level of customer attrition by Income category
+   * Undertake T-test to confirm if any variance identified is statistically relevant
 
 ## Project Plan
 * Ensure all team members are correctly set up to participate in the Project
 * Undertake initial analysis to look at potential hypothesis to test.
 * Agree Hypothesis to test and first steps.
+* Complete First ETL for core data
+* Identify potential data to enhance analysis
+* Undertake analysis to prove/disprove hypothesis
+* Data Architects to undertake T-Tests on hypothesis and make results available to Data Analysts
+* Compare Bank customer population vs American Census population to identify potentially missed opportunities.
+* Create Machine learning model based off customer attributes Identified to have statistical relevance to attrition
+    * Use random Sample of 75% to train model
+    * Use remaining 25% to test model
+    * if model is robust - include in dashboard customers identified as most likely to attrite.
+* Produce commentary of hypothesis results and analysis
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
@@ -66,8 +85,11 @@ We have only 16.07% of customers who have churned. Thus, it's a bit difficult to
     * Population split M/F attrited/Current showing comparative Percentages.
     * Analysis of other factors for the attrited women vs non attrited women/men so identify contributing elements.
 * There are specific ages group more likely to leave
-    *
-* We can forcast chance of leaving based on number of transactions
+    * Comparison of attrition rates by Age Groups
+    * Comparison of Attrition rate of age groups vs population average
+* We can forcast chance of leaving based on number of transactions  
+    * Comparison of attrition rates by Age Groups
+    * Comparison of Attrition rate of age groups vs population average
 * Customers with unknown income are more likely to leave.
 
 ## Analysis techniques used
