@@ -103,7 +103,11 @@ We have only 16.07% of customers who have churned.
 * How did you overcome any legal or societal issues?
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
+Dashboard 1 - Churn Rate by Gender & Churn Rate by Age Group
+
+Dashboard 2 - Relationship between transactions and churn & Churn by Income Category
+
+
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 * How were data insights communicated to technical and non-technical audiences?
 * Explain how the dashboard was designed to communicate complex data insights to different audiences. 
